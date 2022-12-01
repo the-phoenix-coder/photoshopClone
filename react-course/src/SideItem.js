@@ -3,7 +3,7 @@ import React from 'react'
 export default function SideItem(props)
 {
     const {
-        option,
+        name,
         handleClick,
         active
     } = props
@@ -11,7 +11,7 @@ export default function SideItem(props)
         <button
             className={`side-item ${active ? 'active' : ''}`}
             onClick={handleClick}>
-            {option.name}
+            {name}
         </button>
     )
 }
